@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(224, 85, 85);
+    padding: 0;
+    margin: 0;
+}
+
+.MainDiv {
+    background-color: blue;
+    height: 600px;
+    width: 620px;
+    margin: 0 auto;
+    
+}
+
+.MainDiv > div {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.red {
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    animation: red1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+    @keyframes red1 {
+    0% {top: -200px}
+    100% {top: 0px}
+    }
+
+
+
+.yellow {
+    background-color: yellow;
+    border-radius: 50%;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+    .yellow:hover {
+    transform: rotateY(180deg);
+    }
+
+
+    .green {
+        background-color: green;
+        border-radius: 50%;
+        opacity: 0;
+        animation-name: green1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        transition-property: transform;
+        transition-duration: 3s;
+    }
+    
+        @keyframes green1 {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+        }
+    
